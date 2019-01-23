@@ -29,14 +29,14 @@
 
 - (void)showNoDataImage {
     
-    _noDataView=[[UIImageView alloc] init];
-    [_noDataView setImage:[UIImage imageNamed:@"generl_nodata"]];
-    [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:[UITableView class]]) {
-            [_noDataView setFrame:CGRectMake(0, 0,obj.frame.size.width, obj.frame.size.height)];
-            [obj addSubview:_noDataView];
-        }
-    }];
+//    _noDataView=[[UIImageView alloc] init];
+//    [_noDataView setImage:[UIImage imageNamed:@"generl_nodata"]];
+//    [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if ([obj isKindOfClass:[UITableView class]]) {
+//            [_noDataView setFrame:CGRectMake(0, 0,obj.frame.size.width, obj.frame.size.height)];
+//            [obj addSubview:_noDataView];
+//        }
+//    }];
 }
 
 - (void)removeNoDataImage {
