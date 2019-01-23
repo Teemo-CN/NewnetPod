@@ -14,17 +14,5 @@
 @property (nonatomic, assign) BOOL isHidenNaviBar;
 @property (nonatomic, copy) void(^refreshBlock)(void);
 
-/*
- *显示没有数据的页面
- **/
-- (void)showNoDataImage;
-/*
- *移除没有数据的页面
- **/
-- (void)removeNoDataImage;
-/*
- *需要登录
- **/
-- (void)needLoginPoint;
 
 @end
